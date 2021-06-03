@@ -1,0 +1,454 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: snow;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#all{
+    margin: 0 auto;
+    height: auto;
+}
+
+header{
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    width: 100%;
+    background-color: #152348;
+    margin-bottom: 50px;
+    height: 235px;
+    margin-top: -12%;
+}
+
+header img{
+    width: 10%;
+    float: left;
+    margin: 20px 23px 10px 23px;
+}
+
+header h1{
+    margin-top: 15px;
+    padding-top: 4%;
+    padding-left: 300px;
+    font-size: 55px;
+    color: white;
+}
+
+.navmobil{
+    display: none;
+}
+
+nav{
+    height: 50px;
+    padding: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -110px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: #152348;
+}
+
+#user a{
+    padding: 1%
+}
+
+#user a:hover{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#Xsortir{
+    padding: 1%;
+    background-image: url(../imatges/esquisx.png);
+    background-size: 62%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #152348;
+    border: none;
+    font-size: 25px;
+    color: aqua;
+}
+
+#Xsortir a{
+    padding: 1px;
+}
+
+#Xsortir a:hover{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+.dades{
+    width: 99.9%;
+    min-height: 566px;
+    margin-top: 11%;
+    border: 1px solid black;
+    background-color: #E2E5E7;
+    text-align: center;
+}
+
+.dades h2{
+    margin: 50px;
+    font-size: 50px;
+    color:  #3393DE;
+}
+
+.dadesclient{
+    background-color: #152348;
+    border-radius: 10px;
+    margin: auto;
+    width: 600px;
+    padding: 1%;
+}
+
+table{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    width: 600px;
+}
+
+td, th{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: aliceblue;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ddd;
+}
+
+.btn.active{
+    background-color: #666;
+    color: white;
+}
+
+.show{
+    display: block;
+}
+
+footer{
+    padding: 1.5% 0;
+    width: 100%;
+    background-color: #152348;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.fa{
+    padding: 8px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.sobreempresa{
+    color: #d39c2f;
+    margin-top: -6.7%;
+
+}
+
+.sobreempresa ul{
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-size: 20px;
+    height: auto;
+    width: auto;
+}
+
+.sobreempresa li{
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.sobreempresa a{
+    text-decoration: none;
+    color: #d39c2f;
+    margin-top: -13%;
+}
+
+.titolfooter {
+    background-color: white;
+    color: black;
+    width: 130px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+/*MÒBIL*/
+
+@media screen and (max-width: 600px){
+    /*ESITLS DEL "div id=all"*/
+    #all{
+        width: 100%;
+    }
+    
+    /*ESTILS DEL BODY*/
+    body{
+        margin-top: 0px;
+        width: 100%;
+    }
+    
+    /*ESTILS DE LA CAPÇALERA*/
+    header{
+        height: 162px;
+    }
+    
+    header img {
+        width: 120px;
+        margin-top: 6%;
+        margin-right: 6px;
+        float: right;
+    }
+    
+    header h1 {
+        margin-top: -23%;
+        padding-left: 0%;
+        margin-left: 96px;
+        font-size: 38px;
+        color: white;
+        float: left;
+    }
+    
+    /*ESTILS DEL MENU DE LA WEB PER A MÒBIL*/
+    .menu {
+        display: none;
+    }
+    
+    .navmobil{
+        display: contents;
+    }
+    
+    span{
+        float: left;
+        margin-top: -99px;
+        margin-left: -27px;
+        color: white;
+        font-size: 40px;
+    }
+    
+    .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #1A1A1D;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+    }
+    
+    .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+     display: block;
+     transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+     color: #F1F1F1;
+    }
+    
+    .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 26px;
+     margin-left: 50px;
+    }
+    
+    #Xsortir{
+    padding: 1%;
+    background-image: url(../imatges/esquisx.png);
+    background-size: 62%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1A1A1D;
+    border: none;
+    font-size: 25px;
+    margin-left: 30px;
+        margin-top: 10px;
+}
+    
+    #Xsortir a{
+        padding: 1px;
+    }
+
+    #Xsortir a:hover{
+        background: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    
+    .productes {
+        width: 100%;
+        height: auto;
+        margin-top: 21%;
+        border: 1px solid black;
+        background-color: #E2E5E7;
+    }
+    
+    footer{
+        padding: 1.5% 0;
+        width: 100%;
+        background-color: #152348;
+        margin: 0 auto;
+        height: 124px;
+    }
+
+    .social{    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+
+    .fa{    
+        padding: 7px 0px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover{
+        opacity: 0.7;
+    }
+
+    .fa-facebook{
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .sobreempresa{
+        color: #d39c2f;
+        margin-top: -24%;
+
+    }
+
+    .sobreempresa ul{
+        list-style: none;
+        display: inline-block;
+        margin-top: 35px;
+        margin-left: 22px;
+        font-size: 15px;
+        height: auto;
+        width: auto;
+    }
+
+    .sobreempresa li{
+        height: auto;
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .sobreempresa a{
+        text-decoration: none;
+        color: #d39c2f;
+        margin-top: -13%;
+    }
+
+    .titolfooter {
+        background-color: white;
+        color: black;
+        width: 130px;
+        border-radius: 5px;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+}

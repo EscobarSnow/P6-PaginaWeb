@@ -1,0 +1,544 @@
+/*CSS QUE AFECTA A TOTA LA WEB*/
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*ESTILS DEL BODY*/
+body{
+    background-color: snow;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/*ESITLS DEL "div id=all"*/
+#all{
+    margin: 0 auto;
+    height: auto;
+}
+
+/*ESTILS DE LA CAPÇALERA*/
+header{
+    position: fixed;
+    display: inline-block;
+    z-index: 100;
+    width: 100%;
+    background-color: #152348;
+    margin-bottom: 50px;
+    height: 235px;
+    margin-top: -235px;
+}
+
+header img{
+    width: 10%;
+    float: left;
+    margin: 20px 23px 10px 23px;
+}
+
+header h1{
+    margin-top: 15px;
+    padding-top: 4%;
+    padding-left: 300px;
+    font-size: 55px;
+    color: white;
+}
+
+/*ESTILS DEL MENU DE LA WEB*/
+.navmobil{
+    display: none;
+}
+
+nav{
+    height: 50px;
+    padding: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -110px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 1% 2%;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: #152348;
+}
+
+#user a{
+    padding: 1%
+}
+
+#user a:hover{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+#Xsortir{
+    padding: 1%;
+    background-image: url(../imatges/esquisx.png);
+    background-size: 62%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #152348;
+    border: none;
+    font-size: 25px;
+    color: aqua;
+}
+
+#Xsortir a{
+    padding: 1px;
+}
+
+#Xsortir a:hover{
+    background: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+/*ESTILS DE TOTA LA SECCIÓ*/
+section{
+    margin-top: 211px;
+}
+
+/*ESTILS DELS ARTICLES*/
+article{
+    background-color: #E2E5E7 ;
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: space-around;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+article div:hover{
+    background-color: lightgray;
+}
+
+/* ESTIL METEOROLOGIA */
+
+.temps_urgell, .temps_altariba, .temps_cerdanya, .temps_pallars, .temps_vallaran{
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 55px;
+    padding: 5px;
+    width: 250px;
+}
+
+.temps_urgell #urgell1{
+    background-color: #152348;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.temps_altariba #altariba1{
+    background-color: #152348;
+    color: white;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.temps_cerdanya #cerdanya1{
+    background-color: #152348;
+    color: white;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.temps_pallars #pallars1{
+    background-color: #152348;
+    color: white;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.temps_vallaran #vallaran1{
+    background-color: #152348;
+    color: white;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    font-weight: bold;
+}
+
+/*ESTILS DEL FOOTER*/
+footer{
+    padding: 1.5% 0;
+    width: 100%;
+    background-color: #152348;
+    margin: 0 auto;
+    height: 100px;
+}
+
+/*ESTIL DE LES ICONES I L'APARTAT DE XARXES SOCIALS DEL FOOTER*/
+.social{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+ul, li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.fa{
+    padding: 8px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover{
+    opacity: 0.7;
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.sobreempresa{
+    color: #d39c2f;
+    margin-top: -6.7%;
+
+}
+
+.titolfooter {
+    background-color: white;
+    color: black;
+    width: 130px;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.sobreempresa ul{
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 55px;
+    font-size: 20px;
+    height: auto;
+    width: auto;
+}
+
+.sobreempresa li{
+    height: auto;
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.sobreempresa a{
+    text-decoration: none;
+    color: #d39c2f;
+    margin-top: -13%;
+}
+
+
+
+/***************/
+/*MEDIA QUERIES*/
+/***************/
+
+/*MÒBIL*/
+
+@media screen and (max-width: 600px){
+    
+    /*ESITLS DEL "div id=all"*/
+    #all{
+        width: 100%;
+    }
+    
+    /*ESTILS DEL BODY*/
+    body{
+        margin-top: 0px;
+        width: 100%;
+    }
+    
+    /*ESTILS DE LA CAPÇALERA*/
+    header{
+        height: 162px;
+    }
+    
+    header img {
+        width: 120px;
+        margin-top: 6%;
+        margin-right: 6px;
+        float: right;
+    }
+    
+    header h1 {
+        margin-top: -23%;
+        padding-left: 0%;
+        margin-left: 96px;
+        font-size: 38px;
+        color: white;
+        float: left;
+    }
+    
+    /*ESTILS DEL MENU DE LA WEB PER A MÒBIL*/
+    .menu {
+        display: none;
+    }
+    
+    .navmobil{
+        display: contents;
+    }
+    
+    span{
+        float: left;
+        margin-top: -99px;
+        margin-left: -27px;
+        color: white;
+        font-size: 40px;
+    }
+    
+    .sidenav {
+         height: 100%;
+         width: 0;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         background-color: #1A1A1D;
+         overflow-x: hidden;
+         transition: 0.5s;
+         padding-top: 60px;
+    }
+    
+    .sidenav a {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: white;
+         display: block;
+         transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+         color: #F1F1F1;
+    }
+    
+    .sidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 26px;
+         margin-left: 50px;
+    }
+    
+    #Xsortir{
+        padding: 1%;
+        background-image: url(../imatges/esquisx.png);
+        background-size: 62%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #1A1A1D;
+        border: none;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 10px;
+}
+    
+    #Xsortir a{
+        padding: 1px;
+    }
+
+    #Xsortir a:hover{
+        background: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    
+    section{
+        margin-top: 211px;
+        width: 100%;
+    }
+
+    
+    article{
+        background-color: #E2E5E7 ;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-top: -75px;
+    }
+    
+    article div:hover{
+        background-color: lightgray;
+    }
+    
+    /* ESTIL METEOROLOGIA */
+    
+    .temps_urgell, .temps_altariba, .temps_cerdanya, .temps_pallars, .temps_vallaran{
+        border: 1px solid red;
+        border-radius: 10px;
+        margin: 55px;
+        padding: 5px;
+        width: 300px;
+    }
+    
+    .temps_urgell #demo2{
+        background-color: #152348;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .temps_altariba #demo30{
+        background-color: #152348;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .temps_cerdanya #demo40{
+        background-color: #152348;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .temps_pallars #demo50{
+        background-color: #152348;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .temps_vallaran #demo60{
+        background-color: #152348;
+        color: white;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    footer{
+        padding: 1.5% 0;
+        width: 100%;
+        background-color: #152348;
+        margin: 0 auto;
+        height: 124px;
+    }
+
+    .social{    
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: -5px;
+        margin-right: 5px;
+    }
+
+    .fa{    
+        padding: 7px 0px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .fa:hover{
+        opacity: 0.7;
+    }
+
+    .fa-facebook{
+        background: #3B5998;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .sobreempresa{
+        color: #d39c2f;
+        margin-top: -27%;
+
+    }
+
+    .sobreempresa ul{
+        list-style: none;
+        display: inline-block;
+        margin-top: 35px;
+        margin-left: 19px;
+        font-size: 13px;
+        height: auto;
+        width: auto;
+    }
+
+    .sobreempresa li{
+        height: auto;
+        width: auto;
+        margin-bottom: 5px;
+    }
+
+    .sobreempresa a{
+        text-decoration: none;
+        color: #d39c2f;
+        margin-top: -13%;
+    }
+
+    .titolfooter {
+        background-color: white;
+        color: black;
+        width: 130px;
+        border-radius: 5px;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+}   
