@@ -82,10 +82,10 @@
                         <!--AGAFEM LES DADES QUE VOLEM MOSTRAR A LA TAULA DE LA BASE DE DADES-->
 
                         <?php
-                            $consulta = "SELECT nom, cognom, DNI, telefon, correu, clau, curs FROM client, cursos WHERE DNI = '" . $_SESSION["login_user"] . "'";
+                            $consulta = "SELECT client.nom, client.cognom, client.DNI, client.telefon, client.correu, client.clau FROM client WHERE client.DNI = '" . $_SESSION["login_user"] . "'";
                             $resultado = mysqli_query($con, $consulta);
-                                while ($row = mysqli_fetch_array($resultado)) {
-                            ?>
+                            while ($row = mysqli_fetch_array($resultado)) {
+                        ?>
 
                         <!--MOSTREM LES DADES A LA TAULA-->
                         <tr>
@@ -109,18 +109,26 @@
                             <td><?php echo $row['correu'] ?></td>
                         </tr>
                         <tr>
-                            <th>Contrassenya:</th>    
+                            <th>Contrasenya:</th>    
                             <td><?php echo $row['clau'] ?></td>
                         </tr>
-                        <tr>
-                            <th>Curs:</th>    
-                            <td><?php echo $row['curs'] ?></td>
-                        </tr>
-
                         <?php
                             }    
-
-                            ?>
+                            
+                        ?>
+                       <?php
+                        
+                            $consulta2 = "SELECT cursos.curs FROM cursos, client, cursllogat WHERE client.DNI = '" . $_SESSION["login_user"] . "' AND client.DNI = cursllogat.DNI AND cursos.id_curs = cursllogat.id_curs";
+                            $result = mysqli_query($con, $consulta2);
+                            while($row = mysqli_fetch_array($result)){
+                        ?>
+                            <tr>
+                                <th>Curs:</th>    
+                                <td><?php echo $row['curs'] ?></td>
+                            </tr>
+                        <?php  
+                            }
+                        ?>
                     </table>
                 </div>
             </div>

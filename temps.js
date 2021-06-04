@@ -34,7 +34,7 @@ function myFunction(xml) {
     var aran2 = xmlDoc.getElementsByTagName("comarca")[38].getAttribute("nomCAPITALCO");
 
 
-    // DADES AL URGELL
+    // DADES ALT URGELL
     var prediccio = xmlDoc.getElementsByTagName("variable")[4].getAttribute("data");
     var prediccio3 = xmlDoc.getElementsByTagName("variable")[4].getAttribute("simbolmati");
     var prediccio11 = xmlDoc.getElementsByTagName("variable")[4].getAttribute("simboltarda");
